@@ -1,22 +1,70 @@
 
+/*General Styles*/
+* {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-image: url("http://s3-media1.fl.yelpcdn.com/bphoto/OSrY6x_ZjQwCOwYUZzO-oQ/o.jpg");
+  background-size: cover;
+  color: white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: absolute;
+}
+
+
+/*Nav styles*/
+
+.nav-bar {
+  line-height: 54px;
+}
+
+div .nav-bar {
+  background: white;
+  height: 60px;
+  border-top: 6px solid #FFFFFF;
+}
+.nav-bar a {
+  color: #193361;
+}
+.navbar-brand-logo {
+  max-height: 45px;
+  float:left;
+}
+
+
+/*intro styles*/
+
 .headshot {
   float: left;
 }
 
-.nav {
-  text-align: center;
-  padding-top: 13px;
+.bold {
+  font-weight: bolder;
 }
+
 .intro {
-  background: rgba(0, 0, 0, 0.5);
-  position: fixed;
-}
-body {
-  background-image: url("http://meastrategicsolutions.com/wp-content/uploads/2015/08/Seattle-Skyline-panorama.jpg");
-  background-size: cover;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 0 10px 0;
   color: white;
-  background-repeat: no-repeat;
+  top: 120px;
+  position: relative;
 }
-header {
+.description-center {
+  text-align: center;
+}
+.intro a {
   color: white;
+}
+.intro a:hover {
+  color: white;
+}
+.two {
+  position: relative;
+  clear: both;
+  top: 480px;
+  height: 5000px;
+  background: white;
 }

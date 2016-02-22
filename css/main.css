@@ -1,0 +1,22 @@
+
+.headshot {
+  float: left;
+}
+
+.nav {
+  text-align: center;
+  padding-top: 13px;
+}
+.intro {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+}
+body {
+  background-image: url("http://meastrategicsolutions.com/wp-content/uploads/2015/08/Seattle-Skyline-panorama.jpg");
+  background-size: cover;
+  color: white;
+  background-repeat: no-repeat;
+}
+header {
+  color: white;
+}

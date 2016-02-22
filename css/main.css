@@ -6,16 +6,20 @@
 }
 
 body {
-  background-image: url("http://s3-media1.fl.yelpcdn.com/bphoto/OSrY6x_ZjQwCOwYUZzO-oQ/o.jpg");
-  background-size: cover;
+  /*background-image: url("http://s3-media1.fl.yelpcdn.com/bphoto/OSrY6x_ZjQwCOwYUZzO-oQ/o.jpg");*/
+  /*background-size: cover;*/
   color: white;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  /*background-repeat: no-repeat;
+  background-attachment: fixed;*/
   position: absolute;
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1280px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("http://s3-media1.fl.yelpcdn.com/bphoto/OSrY6x_ZjQwCOwYUZzO-oQ/o.jpg");
 }
 
 

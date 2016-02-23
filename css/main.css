@@ -17,17 +17,9 @@ body {
 /*Nav styles*/
 
 .nav-bar {
-  line-height: 54px;
+  line-height: 50px;
 }
 
-div .nav-bar {
-  background: white;
-  height: 60px;
-  border-top: 6px solid #FFFFFF;
-}
-.nav-bar a {
-  color: #193361;
-}
 .navbar-brand-logo {
   max-height: 45px;
   float:left;
@@ -35,10 +27,6 @@ div .nav-bar {
 
 
 /*intro styles*/
-
-.headshot {
-  float: left;
-}
 
 .bold {
   font-weight: bolder;

@@ -8,25 +8,27 @@
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
 </head>
   <body>
-    <div class="wrapper homepage">
-      <header>
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-          <div class="nav-bar container-fluid">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <div class="navbar-logo">
-                <a href="index.html">
-                  <img class="navbar-brand-logo" src="http://images-static.moxiworks.com/static/images/br/windermere/wre_color_200x65.png">
-                </a>
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav-bar container-fluid">
+          <div class="row">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-logo">
+                  <a href="index.html">
+                    <img class="navbar-brand-logo" src="http://images-static.moxiworks.com/static/images/br/windermere/wre_color_200x65.png">
+                  </a>
+                </div>
               </div>
-            </div>
             <div class="collapse navbar-collapse navbar-right" id="navbar">
               <ul class="nav navbar-nav">
                 <li><a href="index.html">Home</a></li>
@@ -43,36 +45,39 @@
           </div>
         </nav>
         </header>
-        <div class="contact-wrap container-fluid">
-          <h1>Send me a message!</h1>
-          <form class="form-horizontal" role="form" id="contact-form" action="thank-you.html">
-            <fieldset>
-              <div class="form-group required">
-                <label class="control-label" for="your-name"><span title="Please enter your first and last name">Name</span></label>
-                <input type="text" class="form-control" name="your-name" id="your-name" placeholder="First, Last" required/>
+          <div class="contact-wrap container-fluid">
+            <div class="row">
+              <div class="container">
+                <h1>Send me a message!</h1>
+                <form class="form-horizontal" role="form" id="contact-form" action="thank-you.html">
+                  <fieldset>
+                    <div class="form-group required">
+                      <label class="control-label" for="your-name"><span title="Please enter your first and last name">Name</span></label>
+                      <input type="text" class="form-control" name="your-name" id="your-name" placeholder="First, Last" required/>
+                    </div>
+                    <div class="form-group required">
+                      <label for="your-email">Email</label>
+                      <input type="email" class="form-control" name="your-email" id="your-email" placeholder="example@example.com" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="your-message">Message</label>
+                      <textarea type="text" class="form-control" name="your-message" id="your-message" rows="8" placeholder="500 Character Limit"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                  </fieldset>
+                </form>
               </div>
-              <div class="form-group required">
-                <label for="your-email">Email</label>
-                <input type="email" class="form-control" name="your-email" id="your-email" placeholder="example@example.com" required/>
-              </div>
-              <div class="form-group">
-                <label for="your-message">Message</label>
-                <textarea type="text" class="form-control" name="your-message" id="your-message" rows="8" placeholder="500 Character Limit"></textarea>
-              </div>
-              <div class="form-group">
-                <button type="submit" class="btn btn-success">Submit</button>
-              </div>
-            </fieldset>
-          </form>
-      </div>
-    </div>
+            </div>
+          </div>
 
-    <script src="javascript/additional-methods.js"></script>
-    <script src="javascript/jquery.validate.js"></script>
+    </body>
+
     <script type="text/javascript" src="javascript/jquery-2.2.0.min.js"></script>
+    <script src="javascript/jquery.validate.js"></script>
+    <script src="javascript/additional-methods.js"></script>
     <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
     <script type="text/javascript" src="javascript/main.js"></script>
 
-
-</body>
 </html>

@@ -12,6 +12,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: absolute;
+  width: 100%;
 }
 
 /*Nav styles*/
@@ -59,6 +60,14 @@ body {
   text-align: center;
 }
 
+/*About*/
+
+.about {
+  background: white;
+  position: relative;
+  top: 120px;
+}
+
 /*contact-form*/
 
 .contact-wrap {
@@ -68,6 +77,11 @@ body {
   top: 120px;
   position: relative;
 }
+
+.error {
+  color: red;
+}
+
 /*thank-you*/
 .thank-you {
   color: white;

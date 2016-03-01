@@ -1,59 +1,42 @@
-/*jQuery.validator.addMethod("lettersonly", function(value, element){
-  return this.optional(element) || /^[a-z\s]+$/i.test(value);
-});
 $(document).on('ready', function(){
-  $("#contact-form").validate({
-    errorClass: "my-error-class",
-    validClass: "my-valid-class",
-    submitHandler: function(form){
-      form.submit();
-    },
-    rules: {
-      "your-name": {
-        required: true,
-        maxLength: 150,
-        lettersonly: true
-      },
-      "your-email": {
-        required: true,
-        email: true
-      },
-      "your-message": {
-        required: false,
-        maxLength: 500
-      },
-    },
-    messages: {
-      "your-name": "Please enter your first and last name.",
-      "your-email": "Please enter a valid email address",
-      "your-message": "500 character max",
-    },
+var $animation_elements = $('.animation-element');
+var $window = $(window);
+
+function check_if_in_view() {
+  var window_height = $window.height();
+  var window_top_position = $window.scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+
+  $.each($animation_elements, function() {
+    var $element = $(this);
+    var element_height = $element.outerHeight();
+    var element_top_position = $element.offset().top;
+    var element_bottom_position = (element_top_position + element_height);
+
+    //check to see if this current container is within viewport
+    if ((element_bottom_position >= window_top_position) &&
+        (element_top_position <= window_bottom_position)) {
+      $element.addClass('in-view');
+    } else {
+      $element.removeClass('in-view');
+    }
   });
-});*/
+}
+
+$window.on('scroll resize', check_if_in_view);
+$window.trigger('scroll');
+});
+
+
 $(document).on('ready', function(){
 $("#contact-form").validate({
   submitHandler: function(form){
     form.submit();
   },
-  rules: {
-    "your-name": {
-      required: true,
-      maxLength: 150
-    },
-    "your-email": {
-      required: true,
-      email: true
-    },
-    "your-message": {
-      required: true,
-      maxLength: 500
-    },
-  },
   messages: {
-    "your-name": "Please enter your first and last name",
-    "your-email": "Please enter a valid email address",
-    "your-message": "500 character max",
-  },
-
+    "your-name": "Please enter your first and last name.",
+    "your-email": "Please enter a valid email address (example@example.com)",
+    "your-message": "500 character max.",
+  }
 });
 });

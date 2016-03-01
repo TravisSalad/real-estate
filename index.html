@@ -9,10 +9,12 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <script src="javascript/modernizr-custom.js"></script>
 </head>
   <body>
+    <div class="page-wrapper">
     <header>
       <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="nav-bar container-fluid">
@@ -50,7 +52,7 @@
       </nav>
       </header>
 
-          <div class="container-fluid intro">
+          <div id="one" class="container-fluid intro">
             <div class="row">
               <div class="container">
                 <div class="headshot col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-3 col-xs-10 col-xs-offset-1">
@@ -77,12 +79,36 @@
               </div>
             </div>
           </div>
-      <div class="two">
-        <p> hello!</p>
-      </div>
+          <div class="page-down affix-top">
+            <a href="#two" class="fa fa-angle-down"></a>
+          </div>
+
+          <div id="two">
+            <div class="search-bar-container animation-element fade-in container-fluid">
+              <div class="row">
+                <div class="container">
+                  <div class="row">
+                    <div class="search-bar col-md-6 col-md-offset-3">
+                      <form class="form-inline">
+                        <div class="form-group">
+                          <label for="search">Search for apartments by location</label>
+                          <input type="text" class="form-control" id="search" placeholder="city/state/zip">
+                          <button class="btn btn-primary">Submit</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
 
 
-<script type="text/javascript" src="javascript/jquery-2.2.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="http://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script>
+<script src="http://cdn.jsdelivr.net/jquery.validation/1.15.0/additional-methods.min.js"></script>
 <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
 <script type="text/javascript" src="javascript/main.js"></script>
 </body>

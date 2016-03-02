@@ -13,7 +13,6 @@
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <script src="javascript/modernizr-custom.js"></script>
 
-
 </head>
   <body>
     <header>
@@ -42,14 +41,27 @@
                 <li><a href="contact.html">Contact</a></li>
               </ul>
                 <ul class="nav navbar-nav">
-                  <li><a class="pull-left">Sign in</a>
+                  <li><a href="#" class="pull-left" data-toggle="modal" data-target"#login-modal">Sign in</a>
+                    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                      <div class="modal-dialog">
+                        <div class="loginmodal-container">
+                          <h1>Login to Your Account</h1><br>
+                        <form>
+                          <input type="text" name="user" placeholder="Username">
+                          <input type="text" name="pass" placeholder="Password">
+                          <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                        </form>
+                      </div>
+                    </div>
+                  </div>
                   <span class="pull-left">|</span>
                   <a class="pull-left">Register</a></li>
                 </ul>
               </div>
           </div>
         </nav>
-        </header>
+      </header>
+
           <div class="contact-wrap container-fluid">
             <div class="row">
               <div class="container">
@@ -68,7 +80,7 @@
                         <label for="your-message">Message</label>
                       <textarea type="text" class="form-control" name="your-message" id="your-message" rows="8" placeholder="500 Character Limit"></textarea>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group text-center">
                       <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
                   </fieldset>

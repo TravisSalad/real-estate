@@ -4,6 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Andrea Salad Real Estate</title>
   <link rel="stylesheet" href="css/main.css">
@@ -52,58 +53,59 @@
       </nav>
       </header>
 
-          <div id="one" class="container-fluid intro">
-            <div class="row">
-              <div class="container">
-                <div class="headshot text-center col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-3 col-xs-10 col-xs-offset-1">
-                  <img src="images/headshot.jpeg"/>
-                </div>
-                <div class="agent-contact col-lg-3 col-lg-offset-0 col-md-3 col-xs-12">
-                  <p class="bold">Windermere Wall Street - Downtown Seattle</p>
-                  <p>Direct: (206) 795-0075</p>
-                  <p>Office: (206) 448-6400</p>
-                  <a class="bold" href="mailto:andreasalad@windermere.com">andreasalad@windermere.com</a><br>
-                  <br><a href="contact.html" class="btn btn-primary" role="button">Contact Me</a><br>
-                  <br><img src="http://images-static.moxiworks.com/static/images/br/windermere/wre_white_202x65.png">
-                </div>
-                <div class="description col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
-                  <div class="description-center">
-                    <h1 class="bold">Andrea Salad</h1>
-                    <h4>Broker</h4>
-                  </div>
-                    <p>If you're in the market to buy or sell a home, you've come to the right spot. Whatever your real estate needs,
-                      I can help you reach your goals with confidence. While visiting my website, you can access the most current real
-                     estate data and search for homes throughout the Western U.S. When the time is right, feel free to contact me so that
-                     I can put the power of Windermere to work for you.</p>
-                </div>
+      <div id="one" class="container-fluid intro">
+        <div class="row">
+          <div class="container">
+            <div class="headshot text-center col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-3 col-xs-10 col-xs-offset-1">
+              <img src="images/headshot.jpeg"/>
+            </div>
+            <div class="agent-contact col-lg-3 col-lg-offset-0 col-md-3 col-xs-12">
+              <p class="bold">Windermere Wall Street - Downtown Seattle</p>
+              <p>Direct: (206) 795-0075</p>
+              <p>Office: (206) 448-6400</p>
+              <a class="bold" href="mailto:andreasalad@windermere.com">andreasalad@windermere.com</a><br>
+              <br><a href="contact.html" class="btn btn-primary" role="button">Contact Me</a><br>
+              <br><img src="http://images-static.moxiworks.com/static/images/br/windermere/wre_white_202x65.png">
+            </div>
+            <div class="description col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+              <div class="text-center">
+                <h1 class="bold">Andrea Salad</h1>
+                <h4>Broker</h4>
               </div>
+                <p>If you're in the market to buy or sell a home, you've come to the right spot. Whatever your real estate needs,
+                  I can help you reach your goals with confidence. While visiting my website, you can access the most current real
+                 estate data and search for homes throughout the Western U.S. When the time is right, feel free to contact me so that
+                 I can put the power of Windermere to work for you.</p>
             </div>
           </div>
-          <div class="page-down affix-top">
-            <a href="#two" class="fa fa-angle-down"></a>
-          </div>
-
-          <div id="two">
-            <div class="search-bar-container animation-element fade-in container-fluid">
-              <div class="row">
-                <div class="container">
-                  <div class="row">
-                    <div class="search-bar col-md-6 col-md-offset-3">
-                      <form class="form-inline">
-                        <div class="form-group text-center">
-                          <label for="search">Search for apartments by location</label>
-                          <input type="text" class="form-control" id="search" placeholder="city/state/zip">
-                          <button class="btn btn-primary">Submit</button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
+      </div>
+
+      <br>
+
+      <div class="search-bar-container container-fluid">
+        <div class="row">
+          <div class="container">
+            <div class="row">
+              <div class="search-bar col-md-4 col-md-offset-4">
+                <form class="apr-search form-group">
+                  <div class="form-group text-center">
+                    <label for="select-state">Mortgage interest rates by state<br><span>Type state abbreviation</span></label><br>
+                    <input type="text" class="form-control" id="select-state" placeholder="WA">
+                    <button id="search" class="btn btn-primary">Submit</button>
+                    <div id='show-rate'></div>
+                    <div id="show-rate-2"></div>
+                    <div id="show-rate-3"></div>
+                    <div id="show-rate-4"></div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>

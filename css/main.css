@@ -45,8 +45,9 @@ body {
 .intro a {
   color: white;
 }
-.intro a:hover {
-  color: white;
+.intro span a:hover {
+  color: #337AB7;
+  text-decoration: none;
 }
 
 .agent-contact {
@@ -66,6 +67,10 @@ body {
   color: white;
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+#select-state {
+  color: black;
 }
 
 /*About*/
@@ -104,11 +109,29 @@ body {
   margin-top: 120px;
 }
 
+/*aside*/
+
+#sidebar {
+  position: fixed;
+  top: 120px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.fa {
+  margin: 5px;
+  color: white;
+}
+
+.social:hover {
+  font-size: 1.3em;
+}
+
+/*modal*/
+.modal-content {
+  position: absolute;
+}
+
+
 
 /*footer*/
-
-.select {
-  position: relative;
-  width: 200px;
-  top: 400px;
-}

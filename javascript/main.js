@@ -37,6 +37,8 @@ $("#contact-form").validate({   //validate contact-form
   }
 });
 
+$('#login-modal').appendTo("body");
+$('#register-modal').appendTo("body");
 
 
 });

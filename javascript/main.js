@@ -41,4 +41,21 @@ $('#login-modal').appendTo("body");
 $('#register-modal').appendTo("body");
 
 
+
+
+//WELCOME MESSAGE ON CLICK IN MODAL
+
+$("#welcome").hide();
+
+function welcomeMessage(){
+  var userinfo = $("#username").val();
+  $(".sign-up-list").hide();
+  console.log(userinfo);
+  $("#welcome").append("Welcome, " + userinfo)
+  $("#welcome").show();
+};
+
+$("#login-button").click(welcomeMessage);
+
+
 });

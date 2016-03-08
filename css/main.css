@@ -132,6 +132,9 @@ body {
   position: absolute;
 }
 
-
+#welcome {
+  font-size: 85%;
+  margin-left: 15px;
+}
 
 /*footer*/

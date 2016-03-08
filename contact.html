@@ -43,7 +43,7 @@
 
 
                 <ul class="nav navbar-nav">
-                  <li><a href="#login-modal" class="pull-left" data-toggle="modal" data-target"#login-modal">Sign in</a></li>
+                  <li class="sign-up-list"><a href="#login-modal" class="pull-left" data-toggle="modal" data-target"#login-modal">Sign in</a></li>
 
                     <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
                       <div class="modal-dialog">
@@ -55,11 +55,11 @@
                           <div class="modal-body">
                             <form>
                               <label for="user">Please enter your username</label>
-                              <input type="text" class="form-control" name="user" placeholder="Username">
+                              <input id="username" type="text" class="form-control" name="user" placeholder="Username">
                               <label for="pass">Please enter your password</label>
                               <input type="text" class="form-control" name="pass" placeholder="Password">
                             </form><br>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal">Sign in</button><br>
+                            <button id="login-button" type="button" class="btn btn-primary" data-dismiss="modal">Sign in</button><br>
                             <br><p>Don't have an account?</p>
                             <a data-dismiss="modal" data-toggle="modal" href="#register-modal">click here to register</a>
                           </div>
@@ -70,9 +70,9 @@
                     </div>
                   </div>
 
-                  <li><span class="pull-left">|</span></li>
+                  <li class="sign-up-list"><span class="pull-left">|</span></li>
 
-                  <li><a href="#register-modal" class="pull-left" data-toggle="modal" data-target"#register-modal">Register</a></li>
+                  <li class="sign-up-list"><a href="#register-modal" class="pull-left" data-toggle="modal" data-target"#register-modal">Register</a></li>
 
                   <div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
                     <div class="modal-dialog">
@@ -86,11 +86,11 @@
                             <label for="email">Please enter a valid email address</label>
                             <input type="text" class="form-control" name="email" placeholder="Email address"><br>
                             <label for="user">Please enter a username</label>
-                            <input type="text" class="form-control" name="user" placeholder="Username"><br>
+                            <input id="username" type="text" class="form-control" name="user" placeholder="Username"><br>
                             <label for="pass">Please enter a password</label>
                             <input type="text" class="form-control" name="pass" placeholder="Password"><br>
                           </form>
-                          <button type="button" class="btn btn-primary" data-dismiss="modal">Register</button><br>
+                          <button id="login-button" type="button" class="btn btn-primary" data-dismiss="modal">Register</button><br>
                           <br><p>Already have an account?</p>
                           <a data-dismiss="modal" data-toggle="modal" href="#login-modal">click here to sign in</a>
                         </div>
@@ -101,11 +101,15 @@
                   </div>
                 </div>
 
+                <li id="welcome"></li>
+
                 </ul>
+
             </div>
           </div>
         </nav>
       </header>
+
 
           <div class="contact-wrap container-fluid">
             <div class="row">

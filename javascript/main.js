@@ -49,13 +49,34 @@ $("#welcome").hide();
 
 function welcomeMessage(){
   var userinfo = $("#username").val();
-  $(".sign-up-list").hide();
+  var greeting = ("Welcome, " + userinfo);
   console.log(userinfo);
-  $("#welcome").append("Welcome, " + userinfo)
+  $("#welcome").append(greeting);
   $("#welcome").show();
+  $(".sign-up-list").hide();
+  // console.log(greeting);
+  sessionStorage.setItem("greeting", greeting);
 };
 
-$("#login-button").click(welcomeMessage);
+console.log(sessionStorage.getItem("greeting"));
 
+$("#login-button").on("click", function(){
+  welcomeMessage();
+});
+
+//create an onload function that checks if a username is present and if so displays
+//welcome message, if no username is present, displays the sign in/register buttons
+
+window.onload = function(){
+  var name = sessionStorage.getItem("greeting");
+  if (name.length != 0){
+    $("#welcome").append(name);
+    $("#welcome").show();
+    $(".sign-up-list").hide();
+  }else{
+    $(".sign-up-list").show();
+    $("#welcome").hide();
+  }
+};
 
 });

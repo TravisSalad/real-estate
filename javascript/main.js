@@ -37,36 +37,33 @@ $("#contact-form").validate({   //validate contact-form
   }
 });
 
+//WELCOME MESSAGE ON CLICK IN MODAL
+
 $('#login-modal').appendTo("body");
 $('#register-modal').appendTo("body");
 
-
-
-
-//WELCOME MESSAGE ON CLICK IN MODAL
-
-$("#welcome").hide();
+$("#welcome").hide(); //hides li #welcome which will show once injected with username data
 
 function welcomeMessage(){
-  var userinfo = $("#username").val();
-  var greeting = ("Welcome, " + userinfo);
+  var userinfo = $("#username").val();   //retrieves value of username input
+  var greeting = ("Welcome, " + userinfo);  //welcome message to be displayed once "logged in"
   console.log(userinfo);
-  $("#welcome").append(greeting);
+  $("#welcome").append(greeting);   //append greeting to welcome li and then show that element and hide the sign up and register buttons
   $("#welcome").show();
   $(".sign-up-list").hide();
   // console.log(greeting);
-  sessionStorage.setItem("greeting", greeting);
+  sessionStorage.setItem("greeting", greeting); //save greeting in session storage
 };
 
 console.log(sessionStorage.getItem("greeting"));
 
-$("#login-button").on("click", function(){
+$("#login-button").on("click", function(){  //when login button is click, run welcome message
   welcomeMessage();
 });
 
+
 //create an onload function that checks if a username is present and if so displays
 //welcome message, if no username is present, displays the sign in/register buttons
-
 window.onload = function(){
   var name = sessionStorage.getItem("greeting");
   if (name.length != 0){
